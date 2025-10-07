@@ -13,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Product {
 
-    private long id;
+    private String id;
     private String name;
     private String description;
 }
