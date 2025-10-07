@@ -10,9 +10,9 @@ import java.util.Optional;
 @Service
 public class ProductService {
     @Autowired
-    ProductRepository productRepository;
+    private ProductRepository productRepository;
 
-    public Optional<Product> findById(String productId){
+    public Optional<Product> findById(Long productId){
         return productRepository.findById(productId);
     }
 }
